@@ -1,0 +1,149 @@
+@import "./common/all.css";
+@import "./common/header.css";
+@import "./common/footer.css";
+
+main.main{
+  /* border: 1px solid blue; */
+  min-width: 1200px;
+  margin: 0 auto;
+}
+
+div#top div.banner{
+  /* border: 1px solid red; */
+  background-image: url("../images/browse_banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  display: inline-block;
+}
+
+div#top div.banner div.title_wrap{
+  /* border: 1px solid red; */
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 13%;
+}
+
+div#top div.banner div.title_wrap h2{
+  font-size: 2.4rem;
+  color: #fff;
+  /* box-shadow: -1px 4px 74px -16px rgba(100, 0, 0, .3); */
+}
+
+div#top div.filter_wrap{
+  /* border: 1px solid cyan; */
+  width: 75%;
+  margin: 0 auto 70px;
+  transform: translateY(-10%);
+}
+
+div#top div.filter_wrap div.filter_bar{
+  /* border: 1px solid blue; */
+  background-color: #fff;
+  box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, .1);
+  width: 75%;
+  height: 55px;
+  margin-bottom: 20px;
+}
+
+div#top div.filter_wrap div.filter_bar::before{
+  /* border: 1px solid green; */
+  content: "tag filter";
+  font-size: 1.6rem;
+  color: #a5a5a5;
+  margin: 15px;
+  display: inline-block;
+}
+
+div#top div.filter_wrap div.tags span{
+  font-size: 2rem;
+  color: #a5a5a5;
+  margin-right: 10px;
+}
+
+div#content{
+  /* border: 1px solid DarkOrchid; */
+  margin: 0 auto;
+  /* position: relative; */
+  width: 80%;
+  font-size: 0;
+}
+
+
+div#content div.content_wrap{
+  /* border: 1px solid red; */
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+div#content div.content_wrap a.linkpage{
+  /* border: 1px solid aquamarine; */
+  display: inline-block;
+  margin-right: calc((100% - 315px * 3) / 2);
+}
+
+div#content div.content_wrap a.last{
+  margin-right: 0;
+}
+
+div#content div.content_wrap a.linkpage div.card{
+  /* border: 1px solid pink; */
+  display: inline-block;
+  width: 315px;
+  background-color: #fff;
+  box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, .1);
+}
+
+div#content div.content_wrap a.linkpage div.card img{
+  width: 100%;
+}
+
+div#content div.content_wrap a.linkpage div.card div.intro{
+  /* border: 1px solid brown; */
+  width: 95%;
+  margin: 20px auto 10px;
+  font-size: 1.5rem;
+  color: #a5a5a5;
+}
+
+div#content div.content_wrap a.linkpage div.card div.bt_wrap{
+  /* border: 1px solid orange; */
+  text-align: right;
+  transform: translateY(-35%);
+  padding-right: 8px;
+}
+
+div#content div.content_wrap a.linkpage div.card div.bt_wrap span{
+  /* border: 1px solid gray; */
+  font-size: 1.4rem;
+  padding: 5px 15px;
+  margin: 0 5px;
+  border-radius: 3px;
+  background-color: hsla(164, 50%, 35%, 1);
+  color: #fff;
+  letter-spacing: 0.2rem;
+  font-weight: 200;
+}
+
+div#content div.more_btn{
+  /* border: 1px solid olive; */
+  text-align: center;
+  padding: 5px 0 100px 0;
+}
+
+div#content div.more_btn button{
+  border: 1px solid transparent;
+  outline: none;
+  background-color: #919191;  /* 更淺的灰 */
+  border-radius: 5px;
+  width: 15%;
+  color: #fff;
+  margin: 0 auto;
+
+  padding: 10px 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  font-weight: 300;
+}

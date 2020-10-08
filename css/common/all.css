@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 62.5%;  /* font-size: 10px */
+}
+
+body{
+  font-family: 'Noto Sans TC', sans-serif, "微軟正黑體", Arial;
+}
+
+a{
+  letter-spacing: 0.15em; /* 150 */
+  text-decoration: none;
+}
+
+p{
+  font-weight: 300;
+  letter-spacing: 0.1em;  /*  字距調整的度量單位都是 1/1000 em */
+}
+
+h2{
+  font-weight: normal;
+  letter-spacing: 0.3em;
+}

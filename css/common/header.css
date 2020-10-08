@@ -1,0 +1,79 @@
+header.header{
+  position: relative;
+  /* background-color: transparent; */
+  background-color: hsla(0, 0%, 100%, .8);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  min-width: 1200px;
+  z-index: 999;
+}
+
+header.header div.header{
+  /* border: 1px solid orange; */
+  width: 1200px;
+  max-width: 100%;
+  min-width: 768px;
+  margin: 0 auto;
+
+}
+
+header.header div.header::before{
+  content: "";
+  display: inline-block;
+  height: 100px;
+}
+
+header.header div.header div.logo{
+  width: 200px;
+  float: left;
+  position: relative;
+  top: 25px;
+}
+
+header.header div.header div.logo a.logo{
+  background-image: url("../../images/logo_header_g_143x54.png");
+  background-repeat: no-repeat;
+  display: block;
+  text-indent: -900px;
+  width: 143px;
+  height: 54px;
+}
+
+header.header div.header nav.nav{
+  /* border: 1px solid red; */
+  display: inline-block;
+  float: right;
+  position: relative;
+  top: 40px;
+}
+
+header.header div.header nav.nav ul.nav{
+  /* border: 1px solid blue; */
+  list-style: none;
+  color: hsla(164, 50%, 31%, 1);;
+  display: inline-block;
+  font-size: 0;
+  border-bottom: 1px solid #fff;
+}
+
+header.header div.header nav.nav ul.nav > li{
+  /* border: 1px solid skyblue; */
+  display: inline-block;
+  font-size: 1.6rem;  /* 16px */
+  width: 80px;
+  height: 40px;
+  text-align: center;
+  margin: 0 8px;
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+
+header.header div.header nav.nav ul.nav > li.my_book{
+  /* border: 1px solid yellow; */
+}
+
+header.header div.header nav.nav ul.nav > li > a{
+  color: hsla(164, 50%, 31%, 1);
+  display: block;
+}

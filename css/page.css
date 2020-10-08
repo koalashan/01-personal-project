@@ -1,0 +1,157 @@
+@import "./common/all.css";
+@import "./common/header.css";
+@import "./common/footer.css";
+
+main.main{
+  border: 1px solid blue;
+  min-width: 1200px;
+  margin: 0 auto;
+}
+
+main.main div#top div.banner{
+  border: 1px solid red;
+  background-image: url("../images/page_banner_1519x677.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  position: relative;
+}
+
+main.main div#top div.banner div.title_wrap{
+  border: 1px solid red;
+  width: 75%;
+  margin: 0 auto;
+  /* text-align: center; */
+  padding-top: 13%;
+}
+
+main.main div#top div.banner div.title_wrap h2{
+  font-size: 3rem;
+  color: #fff;
+}
+
+main.main div#top div.banner div.tags{
+  border: 1px solid orange;
+  display: inline-block;
+  position: absolute;
+  left: 190px;
+  bottom: 40px;
+}
+
+main.main div#top div.banner div.tags span{
+  font-size: 2rem;
+  color: #fff;
+  margin-right: 10px;
+}
+
+/* main.main div#top div.banner div.back img{
+  border: 1px solid GoldenRod;
+  position: absolute;
+  bottom: -10%;
+} */
+
+main.main div#top div.carousel_area{
+  border: 1px solid purple;
+  width: 75%;
+  margin: 100px auto;
+  text-align: center;
+}
+
+main.main div#top div.carousel_area div.bt_wrap{
+  border: 1px solid green;
+  padding: 20px;
+}
+
+main.main div#top div.carousel_area div.bt_wrap span{
+  border: 1px solid gray;
+  font-size: 1.4rem;
+  padding: 5px 15px;
+  margin: 0 5px;
+  border-radius: 3px;
+  background-color: hsla(164, 50%, 35%, 1);
+  color: #fff;
+  letter-spacing: 0.2rem;
+  font-weight: 200;
+}
+
+main.main div#main_content{
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  width: 65%;
+}
+
+main.main div#main_content div.intro_wrap{
+  /* border: 1px solid blue; */
+}
+
+main.main div#main_content div.intro_wrap div.intro{
+  /* border: 1px solid green; */
+  width: 50%;
+  display: inline-block;
+  float: right;
+  margin: 40px 70px 0 0;
+}
+
+main.main div#main_content div.intro_wrap div.intro span.more{
+  border: 2px solid gray;
+  display: inline-block;
+  font-size: 1.4rem;
+  padding: 5px 20px;
+  margin: 20px 5px;
+  border-radius: 3px;
+  background-color: #fff;
+  color: gray;
+  letter-spacing: 0.2rem;
+  /* font-weight: 200; */
+}
+
+main.main div#main_content div.intro_wrap div.intro_img{
+  /* border: 1px solid cyan; */
+  display: inline-block;
+}
+
+main.main div#main_content h2{
+  margin-bottom: 30px;
+  font-size: 2.2rem;  /* 22px */
+  color: #7f7f7f;
+  display: block;
+}
+
+main.main div#main_content div.intro_wrap div.intro p{
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+  line-height: 2;
+}
+
+main.main div#main_content div.list_wrap{
+  /* border: 1px solid orange; */
+  margin: 100px 0 200px 0;
+}
+
+main.main div#main_content div.list_wrap div.list, div.list_img{
+  /* border: 1px solid olive; */
+  display: inline-block;
+}
+
+main.main div#main_content div.list_wrap div.list{
+  /* border: 1px solid green; */
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+  line-height: 2;
+  width: 50%;
+  display: inline-block;
+  float: left;
+  margin: 10px 20px 0 30px;
+}
+
+main.main div#main_content div.list_wrap div.list ul{
+  margin-left: 20px;
+}
+
+main.main div#main_content li{
+  font-size: 1.4rem;
+  line-height: 2;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
