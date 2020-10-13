@@ -2,8 +2,9 @@
 <html lang="zh-Hant">
   <head>
     <meta charset="utf-8" >
-    <title>讀旅 - 選錄旅書 - 詳細內容</title>
-    <link rel="stylesheet" href="./css/page.css ">
+    <title>讀旅 - 詳細內容</title>
+    <link rel="stylesheet" href="./css/page.css">
+    <link rel="icon" href="./images/_previmg.png" type="image/x-icon"/>
   </head>
 
   <body>
@@ -11,7 +12,7 @@
       <div class="header">
         <!-- logo -->
         <div class="logo">
-          <a href="/" class="logo">讀旅</a>
+          <a href="./index.html/" class="logo">讀旅</a>
         </div>
         <!-- navbar -->  <!-- 加上語意 -->
         <nav class="nav">
@@ -31,55 +32,71 @@
         <!-- top_banner -->
         <div class="banner">
           <div class="title_wrap">
-              <h2>詳細內容</h2>
+              <h2>在田中央</h2>
+              <h3>: 地景、建物、人與河的融合</h3>
           </div>
 
-          <div class="tags">
+          <!-- <div class="tags">
               <span>#tag</span>
               <span>#tag</span>
-          </div>
-
-          <!-- <div class="back">
-            <img src="./images/page_back.png" alt="">
           </div> -->
+
+          <div class="back">
+            <img src="./images/page_back.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div id="carousel_area">
+        <div class="caro_img">
+          <img src="./images/page_caro_img.jpg">
         </div>
 
-        <div class="carousel_area">
-          <div class="caro_img">
-            <img src="./images/page_carousel_1030x460.png">
-          </div>
+        <div class="caro_control">
+          <a href="#" class="left"><img src="./images/page_caro_control_left.svg" alt=""></a>
+          <a href="#" class="right"><img src="./images/page_caro_control_right.svg" alt=""></a>
+        </div>
 
-          <div class="bt_wrap">
-            <span class="favor">收藏</span>
-            <span class="add">加入旅冊</span>
-          </div>
+        <div class="caro_dot">
+          <ul>
+            <li class="emp"></li><li></li><li></li>
+          </ul>
+        </div>
+
+        <div class="bt_wrap">
+          <span class="favor">收藏</span>
+          <span class="add">加入旅冊</span>
         </div>
       </div>
 
       <div id="main_content">
         <div class="intro_wrap">
           <div class="intro_img">
-            <img src="./images/page_img01_373x310.png" alt="">
+            <img src="./images/page_img_book.jpg" alt="">
           </div>
           <div class="intro">
-            <h2>標題: 介紹</h2>
-            <p>lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsum<br>
-              lorem ipsumlorem ipsumlorem ipsum</p>
+            <h2>在田中央：宜蘭的青春 / 建築的場所 /  島嶼的線條</h2>
+            <p>
+              選擇長期定居在宜蘭過活與工作，這群建築師同時是居民，以及專業者；二十多年來蔓生而出一大片開放的、從小步道至大橋樑的公共建築群。
+              <br><br>
+              「把這裡當作家園，能做什麼就做什麼，暫時做不到的就放在心裡等待，能做也要故意留下一些空白。」—黃聲遠
+            </p>
             <span class="more">more</span>
           </div>
         </div>
 
         <div class="list_wrap">
           <div class="list">
-            <h2>標題: 介紹</h2>
+            <h2>{ 精選周邊店家 }</h2>
             <ul class="list">
-              <li>lorem ipsumlorem ipsumlorem ipsum</li>
-              <li>lorem ipsumlorem ipsumlorem </li>
-              <li>lorem ipsumlorem ipsumlorem ipsum</li>
+              <li>開始：器皿</li>
+              <p>位於河岸邊的手作陶藝工作室，<br>也可以內用咖啡、欣賞河景。</p>
+              <li class="cafe">鳴草咖啡</li>
+              <p>自家烘培咖啡，特色單人手沖教學<br>組合，有機會遇到店貓們。</p>
             </ul>
           </div>
           <div class="list_img">
-            <img src="./images/page_img02_412x242.png" alt="">
+            <img src="./images/page_route_map.jpg" alt="">
           </div>
         </div>
       </div>
@@ -109,6 +126,10 @@
           <a href="#" class="ig"><img src="./images/icon_ig_27x27.png" class="ig" alt=""></a>
           <a href="#" class="fb"><img src="./images/icon_fb_25x25.png" class="fb" alt=""></a>
         </div>
+      </div>
+
+      <div class="to_top">
+        <a href="#top">↑</a>
       </div>
     </footer>
   </body>

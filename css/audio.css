@@ -1,3 +1,182 @@
 @import "./common/all.css";
 @import "./common/header.css";
 @import "./common/footer.css";
+
+main.main{
+  /* border: 1px solid blue; */
+  min-width: 1200px;
+  margin: 0 auto;
+}
+
+div#top div.banner{
+  /* border: 1px solid red; */
+  background-image: url("../images/audio_banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
+  display: inline-block;
+}
+
+div#top div.banner div.title_wrap{
+  /* border: 1px solid red; */
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 18%;
+}
+
+div#top div.banner div.title_wrap h2{
+  font-size: 3.2rem;
+  color: #fff;
+  /* box-shadow: -1px 4px 74px -16px rgba(100, 0, 0, .3); */
+}
+
+div#top div.filter_wrap{
+  /* border: 1px solid cyan; */
+  width: 75%;
+  margin: 0 auto 80px;
+  transform: translateY(-25%);
+}
+
+div#top div.filter_wrap div.filter_bar{
+  /* border: 1px solid blue; */
+  background-color: #fff;
+  box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, .1);
+  width: 75%;
+  height: 55px;
+  margin-bottom: 20px;
+}
+
+/* div#top div.filter_wrap div.filter_bar::before{
+  border: 1px solid green;
+  content: "tag filter";
+  font-size: 1.6rem;
+  color: #a5a5a5;
+  margin: 15px;
+  display: inline-block;
+} */
+
+div#top div.filter_wrap div.tags span{
+  font-size: 2rem;
+  color: #a5a5a5;
+  margin-right: 10px;
+}
+
+div#audio{
+  /* border: 1px solid cyan; */
+  width: 75%;
+  margin: 0 auto;
+}
+
+div#audio div.audio{
+  /* border: 1px solid black; */
+  /* border-top: 1px solid hsla(0, 0%, 90%, .8); */
+  background-color: #fff;
+  box-shadow: 4px 4px 38px -9px hsla(0, 0%, 90%, .8);
+  width: 90%;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 25px 0;
+  text-align: center;
+  border-radius: 3px;
+}
+
+div#audio div.audio.card05{
+  /* border-bottom: 1px solid hsla(0, 0%, 90%, .8); */
+}
+
+div#audio div.audio div.img{
+  /* border: 1px solid orange; */
+  display: inline-block;
+  width: 18%;
+  /* padding-left: 20px; */
+  vertical-align: top;
+}
+
+div#audio div.audio div.img img{
+  border-radius: 50%;
+  overflow: hidden;
+  width: 130px;
+}
+
+div#audio div.audio div.text{
+  /* border: 1px solid greenyellow; */
+  display: inline-block;
+  width: 70%;
+  vertical-align: top;
+  padding: 20px;
+  padding-left: 5px;
+  text-align: left;
+}
+
+div#audio div.audio div.text h2{
+  font-size: 2rem;
+  color: hsla(155, 100%, 32%, 1);
+  margin: 10px 0;
+  letter-spacing: 0.5rem;
+}
+
+div#audio div.audio div.text p{
+  font-size: 1.6rem;
+  color: hsla(57, 9%, 61%, 1);
+  letter-spacing: 0.4rem;
+  margin: 10px 0 15px 3px;
+}
+
+div#audio div.audio div.text p > img{
+  margin-left: 5px;
+  opacity: 70%;
+  width: 11px;
+}
+
+div#audio div.audio div.btn{
+  /* border: 1px solid IndianRed; */
+  display: inline-block;
+  width: 10%;
+  vertical-align: top;
+  padding: 10px;
+  margin-top: 13px;
+  text-align: center;
+  position: relative;
+}
+
+div#audio div.audio div.btn::before{
+  border-right: 1px solid hsla(60, 20%, 75%, .4);
+  content: "";
+  display: inline-block;
+  height: 100px;
+  position: absolute;
+  /* margin-right: 10px; */
+  left: 0;
+}
+
+div#audio div.audio div.btn button{
+  /* border: 1px solid black; */
+  border: 1px solid transparent;
+  width: 45px;
+  height: 28px;
+  border-radius: 2px;
+  margin: 3px;
+  font-size: 1.3rem;
+  background-color: transparent;
+  letter-spacing: 0.1rem;
+}
+
+div#audio div.more_btn{
+  text-align: center;
+  padding: 70px 0 150px 0;
+}
+
+div#audio div.more_btn button{
+  border: 1px solid hsla(60, 20%, 75%, 1);
+  outline: none;
+  background-color: #fff;
+  border-radius: 3px;
+  width: 13%;
+  color: hsla(60, 20%, 75%, 1);
+  margin: 0 auto;
+  padding: 14px 0;
+  font-size: 2rem;
+  letter-spacing: 0.4rem;
+  font-weight: 300;
+}

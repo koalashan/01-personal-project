@@ -2,9 +2,9 @@
 @import "./common/header.css";
 @import "./common/footer.css";
 
-header.header{
+/* header.header{
   position: fixed;
-}
+} */
 
 main.main{
   /* border: 1px solid blue; */
@@ -12,14 +12,14 @@ main.main{
   margin: 0 auto;
 }
 
-main.main div#top{
+div#top{
   /* border: 1px solid black; */
   position: relative;
 }
 
-main.main div#top div.banner{
+div#top div.banner{
   /* border: 1px solid red; */
-  background-image: url("../../images/banner_road_1520x1013.jpg");
+  background-image: url("../images/banner_road_1520x1013.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -30,80 +30,90 @@ main.main div#top div.banner{
   z-index: -2; */
 }
 
-main.main div#top::before{
+div#top::before{
   /* border: 1px solid red; */
   content: "";
   display: block;
   min-width: 100%;
   height: 200px;
-  background-image: url("../../images/banner_wave_200.png");
+  background-image: url("../images/banner_wave_1519x200.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -5%;
+  bottom: 0;
 }
 
-main.main div#top div.top_content{
+div#top div.top_content{
   /* border: 1px solid aquamarine; */
   width: 80%;
   display: block;
   margin: 0 auto;
   position: absolute;
-  bottom: 1%;
+  bottom: 3%;
   left: 0;
   right: 0;
 }
 
-main.main div#top div.top_content div.bt_start{
+div#top div.top_content div.bt_start{
   /* border: 1px solid greenyellow; */
   width: 10%;
   display: inline-block;
 }
 
-main.main div#top div.top_content div.bt_start::before{
+div#top div.top_content div.bt_start::before{
   /* border: 1px solid black; */
   content: "";
   display: inline-block;
   background-color: #fff;
-  width: 110px;
-  height: 110px;
+  width: 123px;
+  height: 123px;
   border-radius: 50%;
   position: absolute;
-  top: -3%;
+  top: -6%;
   left: -.5%;
-  z-index: -1;
+  /* z-index: 0; */
 }
 
-main.main div#top div.top_content div.bt_start a.bt_start{
-  border: 2px solid hsla(164, 50%, 31%, 1);
-  width: 100px;
-  height: 100px;
+div#top div.top_content div.bt_start a.bt_start{
+  border: 2px solid hsla(57, 9%, 61%, 1);
+  width: 110px;
+  height: 110px;
   background-color: #fff;
   border-radius: 50%;
   display: inline-block;
-  padding: 28px 23px;
-  vertical-align: top;
+  padding-top: 25%;
+  /* vertical-align: top; */
 
-  color: hsla(164, 50%, 31%, 1);
+  color: hsla(57, 9%, 61%, 1);
   text-align: center;
-  font-size: 1.4rem;  /* 14px */
+  font-size: 1.6rem;  /* 16px */
   box-shadow: -1px 4px 74px -16px rgba(0, 0, 0, .3);
+  position: relative;
 }
 
-main.main div#top div.top_content div.para_desc{
+div#top div.top_content div.bt_start a.bt_start:hover{
+  border: 2px solid hsla(60, 100%, 40%, 1);
+  background-color: #fff;
+  color: hsla(60, 100%, 40%, 1);
+  transition: all 0.1s ease-out 0s;
+  width: 111px;
+  height: 111px;
+}
+
+div#top div.top_content div.para_desc{
   /* border: 1px solid green; */
-  color: #7f7f7f;
+  color: hsla(0, 0%, 67%, 1);
   display: inline-block;
   padding: 0 5px;
   vertical-align: bottom;
 
   letter-spacing: 0.3em;
-  font-size: 1.5rem;  /* 15px */
+  font-size: 1.6rem;  /* 16px */
 }
 
-main.main div#top div.top_content div.para_intro{
+div#top div.top_content div.para_intro{
   /* border: 1px solid crimson; */
   width: calc(100% - 355px - 107px);
   display: inline-block;
@@ -111,63 +121,90 @@ main.main div#top div.top_content div.para_intro{
   float: right;
   position: absolute;
   right: 5%;
-  bottom: 0%;
+  bottom: 8%;
 
-  color: hsla(164, 50%, 31%, 1);
-  font-size: 1.6rem;  /* 16px */
+  color: hsla(57, 9%, 61%, 1);
+  font-size: 1.7rem;  /* 17px */
   font-style: italic;
   letter-spacing: 0.15em;
   text-align: center;
 }
 
-main.main div#browse{
-  border: 1px solid DarkOrchid;
+div#browse{
+  /* border: 1px solid DarkOrchid; */
   margin: 120px 0;
   margin: 120px auto;
   position: relative;
   width: 75%;
 }
 
-/* main.main div#browse div.browse_img::after{
-  content: "aaa";
-  display: block;
-  border: 1px solid black;
+div#browse div.browse_img_area{
+  /* border: 1px solid chocolate; */
   width: 100%;
-  background-color: cyan;
+  overflow: hidden;
+  position: relative;
+}
+
+div#browse div.browse_img_area::after{
+  content: "";
+  display: block;
+  /* border: 1px solid black; */
+  width: 100%;
   background-image: url("../images/browsing_wave_369x106.png");
   background-repeat: no-repeat;
   background-size: contain;
-  padding-top: 12%;
+  padding-top: 10%;
   position: absolute;
-} */
-
-main.main div#browse div.browse_img{
-  border: 1px solid chocolate;
-  width: 100%;
-  overflow: hidden;
+  bottom: -1%;
+  left: -1%;
 }
 
-main.main div#browse h2.browse{
-  border: 1px solid IndianRed;
-  font-size: 2.2rem;  /* 22px */
-  color: #7f7f7f;
+div#browse div.browse_img_area div.title_browse{
+  /* border: 1px solid gold; */
+  position: absolute;
+  bottom: 1%;
+  left: 10%;
+  z-index: 10;
+}
+
+div#browse div.browse_img_area div.title_browse h2.browse{
+  /* border: 1px solid greenyellow; */
+  font-size: 2.6rem;  /* 26px */
+  letter-spacing: 0.6rem;
+  color: hsla(155, 100%, 32%, 1);
   display: inline-block;
+  font-weight: 500
 }
 
-main.main div#browse div.browse_para{
-  border: 1px solid GoldenRod;
-  color: hsla(164, 50%, 31%, 1);
-  letter-spacing: 0.3em;
-  font-size: 1.5rem;  /* 15px */
-  text-align: right;
+div#browse div.browse_img_area div.title_browse h2.browse::before{
+  content: "";
+  display: inline-block;
+  width: 29px;
+  height: 41px;
+  background-image: url("../images/index_title_deco.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(4deg) translateY(11px);
+  margin-right: 17px;
+}
 
-  margin: 80px 0;
+div#browse div.browse_para{
+  /* border: 1px solid GoldenRod; */
+  text-align: right;
+  margin-top: 20px;
   display: inline-block;
   float: right;
 }
 
-main.main div#browse div.bt_browse_page{
-  border: 1px solid blue;
+div#browse div.browse_para p{
+  color: hsla(57, 9%, 61%, 1);
+  letter-spacing: 0.2rem;
+  line-height: 2;
+  font-size: 1.5rem;  /* 15px */
+}
+
+div#browse div.bt_browse_page{
+  /* border: 1px solid blue; */
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -175,45 +212,59 @@ main.main div#browse div.bt_browse_page{
 }
 
 
-main.main div#browse div.bt_browse_page img.deco_left{
+div#browse div.bt_browse_page img.deco_left{
   /* border: 1px solid red; */
+  width: 481px;
+  height: 49px;
   position: absolute;
   left: 0;
   top: 23%;
 
 }
 
-main.main div#browse div.bt_browse_page img.deco_right{
+div#browse div.bt_browse_page img.deco_right{
   /* border: 1px solid red; */
+  width: 463px;
+  height: 36px;
   position: absolute;
   right: 0;
   bottom: 23%;
 }
 
-main.main div#browse div.bt_browse_page a.bt_browse_page{
-  border: 2px solid hsla(164, 50%, 31%, 1);
-  width: 103px;
-  height: 103px;
+div#browse div.bt_browse_page a.bt_browse_page{
+  border: 2px solid hsla(57, 9%, 61%, 1);
+  width: 116px;
+  height: 116px;
   background-color: #fff;
   border-radius: 50%;
   display: inline-block;
-  padding: 35px 0;
-  margin: 35px 25px;
+  padding-top: 3.5%;
+  margin: 20px 25px;
 
-  color: hsla(164, 50%, 31%, 1);
+  color: hsla(57, 9%, 61%, 1);
   text-align: center;
-  font-size: 1.5rem;  /* 15px */
-  box-shadow: -1px 4px 74px -16px rgba(0, 0, 0, .3);
+  font-size: 1.7rem;  /* 17px */
+  letter-spacing: 0.4rem;
+  /* box-shadow: -1px 4px 74px -16px rgba(0, 0, 0, .3); */
 }
 
-main.main div#para_area{
+div#browse div.bt_browse_page a.bt_browse_page:hover{
+  border: 2px solid hsla(60, 100%, 40%, 1);
+  background-color: #fff;
+  color: hsla(60, 100%, 40%, 1);
+  transition: all 0.1s ease-out 0s;
+  width: 117px;
+  height: 117px;
+}
+
+div#para_area{
   /* border: 1px solid Aquamarine; */
   width: 75%;
   margin: 0 auto;
   font-size: 0;
 }
 
-main.main div#para_area div.para{
+div#para_area div.para{
   /* border: 1px solid red; */
   width: 45%;
   display: inline-block;
@@ -221,36 +272,35 @@ main.main div#para_area div.para{
   vertical-align: top;
 }
 
-main.main div#para_area div.para p.quot_left, p.quot_right{
-  font-size: 10rem;  /* 100px */
+div#para_area div.para p.quot_left{
+  /* border: 1px solid black; */
+  font-size: 30rem;  /* 300px */
   font-family: "新細明體";
-  color: hsla(0, 0%, 69%, .6);
+  color: hsla(60, 20%, 75%, .4);
   display: inline-block;
-}
-
-main.main div#para_area div.para p.quot_left{
-  /* border: 1px solid black; */
+  position: absolute;
+  left: -4%;
   vertical-align: top;
-
 }
 
-main.main div#para_area div.para p.quot_right{
-  /* border: 1px solid black; */
+/* div#para_area div.para p.quot_right{
+  border: 1px solid black;
   vertical-align: bottom;
-  /* float: right; */
+  float: right;
   width: 100%;
   text-align: right;
-}
+}  */
 
-main.main div#para_area div.para p.main_para{
+div#para_area div.para p.main_para{
   /* border: 1px solid purple; */
   color: #898989;
   display: inline-block;
   letter-spacing: 0.1em;
-  margin-top: 50px;
+  line-height: 1.7;
+  margin: 10% 0 0 15%;
 }
 
-main.main div#para_area div.img_area{
+div#para_area div.img_area{
   /* border: 1px solid blue; */
   display: inline-block;
   max-width: 50%;
@@ -260,9 +310,9 @@ main.main div#para_area div.img_area{
   margin-left: 5%;
 }
 
-main.main div#para_area div.img_area p.sentence{
+div#para_area div.img_area p.sentence{
   display: inline-block;
-  background-color: hsla(164, 50%, 31%, 1);
+  background-color: hsla(60, 20%, 75%, 1);
   padding: 5px 20px;
   text-align: center;
   color: #fff;
@@ -272,26 +322,26 @@ main.main div#para_area div.img_area p.sentence{
   right: 0;
 }
 
-main.main div#para_area div.img_area img.sentence_img{
-  opacity: 75%;
+div#para_area div.img_area img.sentence_img{
+  /* opacity: 75%; */
   /* position: absolute; */
   margin: 20px;
   margin-left: 40px;
   margin-bottom: -70px;
 }
 
-main.main div#make{
+div#make{
   width: 75%;
   margin: 0 auto;
 
 }
 
- main.main div#make div.title_make{
+ div#make div.title_make{
   /* border: 1px solid Aquamarine; */
   position: relative;
  }
 
- main.main div#make div.title_make h2.make{
+ div#make div.title_make h2.make{
    /* border: 1px solid IndianRed; */
    font-size: 2.2rem;  /* 22px */
    color: #7f7f7f;
@@ -302,29 +352,29 @@ main.main div#make{
    left: 10%;
  }
 
-main.main div#make div.title_make h2.make::after{
+div#make div.title_make h2.make::after{
   content: "";
   display: inline-block;
-  width: 35px;
-  height: 35px;
-  background-image: url("../images/title_deco.png");
+  width: 30px;
+  height: 38px;
+  background-image: url("../images/index_title_deco.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  transform: scaleX(-1) rotate(20deg) translateY(8px);
-  margin-left: 5px;
+  transform: scaleX(-1) rotate(9deg) translateY(8px);
+  margin-left: 7px;
 }
 
-main.main div#make div.border{
+div#make div.border{
   border: 1px solid transparent;
   /* border: 1px solid red; */
   width: 100%;
   /* height: 90vh; */
-  background-image: url("../images/border_deco_1116x612.png");
+  background-image: url("../images/index_make_border.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-main.main div#make div.border div.wrap{
+div#make div.border div.wrap{
   /* border: 1px solid orange; */
   margin: 0 auto;
   width: 75%;
@@ -333,23 +383,38 @@ main.main div#make div.border div.wrap{
   margin-bottom: 16%;
 }
 
-main.main div#make div.border div.wrap div.make{
+div#make div.border div.wrap div.make{
   /* border: 1px solid blue; */
   text-align: center;
   display: inline-block;
 }
 
-main.main div#make div.border div.wrap div.step01, .step02{
-  margin-right: calc((100% - (160px * 3)) / 2);
+div#make div.border div.wrap div.step01, .step02{
+  margin-right: calc((100% - (170px * 3)) / 2);
 }
 
-main.main div#make div.border div.wrap div.make p{
-  font-size: 1.6rem;
+/* div#make div.border div.wrap div.make img.icon01{
+  width: 142px;
+  height: 145px;
+}
+
+div#make div.border div.wrap div.make img.icon02{
+  width: 110px;
+  height: 149px;
+}
+
+div#make div.border div.wrap div.make img.icon03{
+  width: 157px;
+  height: 132px;
+} */
+
+div#make div.border div.wrap div.make p{
+  font-size: 1.7rem;
   margin-top: 30px;
-  color: #7f7f7f;
+  color: hsla(60, 20%, 75%, 1);
 }
 
-main.main div#make div.border div.bt_make{
+div#make div.border div.bt_make{
   /* border: 1px solid blue; */
   display: inline-block;
   width: 100%;
@@ -358,52 +423,63 @@ main.main div#make div.border div.bt_make{
   /* margin-bottom: 80px; */
 }
 
-main.main div#make div.border div.bt_make a.bt_make{
-  width: 115px;
-  height: 115px;
-  background-color: hsla(164, 50%, 31%, 1);
+div#make div.border div.bt_make a.bt_make{
+  width: 138px;
+  height: 138px;
+  border: 9px solid #fff;
+  background-color: hsla(60, 20%, 75%, 1);
   border-radius: 50%;
   display: inline-block;
-  padding: 45px 0;
-  margin: -5% 0 8% 82%;
+  padding-top: 4%;
+  margin: -6% 8% 8% 0;
 
   color: #fff;
   text-align: center;
-  font-size: 1.5rem;  /* 15px */
-  box-shadow: -1px 4px 74px -16px rgba(0, 0, 0, .3);
+  font-size: 1.7rem;  /* 17px */
+  letter-spacing: 0.4rem;
+  float: right;
+  /* box-shadow: -1px 4px 74px -16px rgba(0, 0, 0, .3); */
 }
 
-main.main div#comment{
+div#make div.border div.bt_make a.bt_make:hover{
+  background-color: hsla(60, 100%, 40%, 1);
+  color: #fff;
+  transition: all 0.2s ease-out 0s;
+  width: 140px;
+  height: 140px;
+}
+
+div#comment{
   /* border: 1px solid red; */
-  width: 60%;
+  width: 65%;
   margin: 0 auto 8%;
 }
 
-main.main div#comment div.title_comment{
+div#comment div.title_comment{
   /* border: 1px solid cyan; */
   display: inline-block;
   float: left;
 }
 
-main.main div#comment div.title_comment h2.comment{
-  color: hsla(164, 50%, 31%, 1);
-  letter-spacing: 0.2em;
-  font-size: 2.2rem;
+div#comment div.title_comment h2.comment{
+  color: hsla(155, 100%, 32%, 1);
+  letter-spacing: 0.3em;
+  font-size: 2.6rem;
 }
 
-main.main div#comment div.title_comment h2.comment::after{
+div#comment div.title_comment h2.comment::after{
   content: "";
   display: inline-block;
-  width: 28px;
-  height: 28px;
-  background-image: url("../images/title_deco.png");
+  width: 27px;
+  height: 30px;
+  background-image: url("../images/index_title_deco.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  transform: scaleX(-1) rotate(13deg) translateY(6px);
+  transform: scaleX(-1) rotate(9deg) translateY(4px);
   margin-left: 10px;
 }
 
-main.main div#comment div.card{
+div#comment div.card{
   /* border: 1px solid blue; */
   border-top-left-radius: 100px;
   width: 80%;
@@ -413,56 +489,56 @@ main.main div#comment div.card{
   text-align: center;
 }
 
-main.main div#comment div.card div.wrap{
+div#comment div.card div.wrap{
   /* border: 1px solid black; */
   padding: 45px 0;
 }
 
-main.main div#comment div.card div.wrap div.comme_avatar01{
+div#comment div.card div.wrap div.comme_avatar01{
   /* border: 1px solid aqua; */
   display: inline-block;
   width: 16%;
   vertical-align: middle;
 }
 
-main.main div#comment div.card div.wrap div.comme_avatar01 img.avatar01{
+div#comment div.card div.wrap div.comme_avatar01 img.avatar01{
   border-radius: 50%;
   width: 113px;
   height: 113px;
   overflow: hidden;
 }
 
-main.main div#comment div.card div.wrap div.comme_para01{
+div#comment div.card div.wrap div.comme_para01{
   /* border: 1px solid purple; */
   width: 67%;
   display: inline-block;
   text-align: center;
-  margin-left: 27px;
+  margin-left: 20px;
   vertical-align: middle;
 }
 
-main.main div#comment div.card div.wrap div.comme_para01 p{
+div#comment div.card div.wrap div.comme_para01 p{
   /* border: 1px solid pink; */
   display: inline-block;
 
-  font-size: 1.5rem;
-  color: #7f7f7f;
+  font-size: 1.6rem;
+  color: hsla(57, 9%, 61%, 1);
   text-align: center;
   line-height: 2;
 }
 
-main.main div#comment div.card div.wrap div.comme_para01 p.name{
-  font-size: 1.4rem;
-  color: #7f7f7f;
+div#comment div.card div.wrap div.comme_para01 p.name{
+  font-size: 1.5rem;
+  color: hsla(06, 20%, 75%, 1);
   opacity: 65%;
   margin-top: 10px;
 }
 
-/* main.main div#comment div.card div.wrap div.dot{
+/* div#comment div.card div.wrap div.dot{
   border: 1px solid coral;
   display: inline-block;
 }
 
-main.main div#comment div.card div.wrap div.dot ul > li{
+div#comment div.card div.wrap div.dot ul > li{
   border: 1px solid blue;
 } */

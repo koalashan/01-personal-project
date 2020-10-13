@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" >
     <title>讀旅 - 首頁</title>
-    <link rel="stylesheet" href="./css/index.css ">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" href="./images/_previmg.png" type="image/x-icon"/>
   </head>
 
   <body>
@@ -11,7 +12,7 @@
       <div class="header">
         <!-- logo -->
         <div class="logo">
-          <a href="/" class="logo">讀旅</a>
+          <a href="./index.html" class="logo">讀旅</a>
         </div>
         <!-- navbar -->  <!-- 加上語意 -->
         <nav class="nav">
@@ -51,17 +52,18 @@
 
       <div id="browse">
         <!-- outer_div for position -->
-        <div class="browse_img">
-          <a href="#" class="img01">
+        <div class="browse_img_area">
+          <a href="./page.html" class="img01">
             <img src="./images/green_onion_1160x580.jpg" class="img01" alt="照片-宜蘭三星蔥田">
           </a>
+          <!-- title -->
+          <div class="title_browse">
+            <!-- decorate_element -->
+            <h2 class="browse">選錄旅書</h2>
+          </div>
+          <!-- decorate_shape ::after -->
         </div>
-        <!-- decorate_shape ::after -->
-        <!-- title -->
-        <div class="title_browse">
-          <!-- decorate_element -->
-          <h2 class="browse">選錄旅書</h2>
-        </div>
+
         <!-- para_text -->
         <div class="browse_para">
           <p class="b_para01">
@@ -76,11 +78,11 @@
 
         <div class="bt_browse_page">
           <!-- decorate_line -->
-          <img src="./images/deco_line_left.png" class="deco_left" alt="">
+          <img src="./images/index_deco_line_left.svg" class="deco_left" alt="">
           <!-- bt_browse_page -->
           <a href="./browse.html" class="bt_browse_page">前往選書</a>
           <!-- decorate_line -->
-          <img src="./images/deco_line_right.png" class="deco_right" alt="">
+          <img src="./images/index_deco_line_right.svg" class="deco_right" alt="">
         </div>
       </div>
 
@@ -106,11 +108,11 @@
             <br>
             打發時間最容易的，就是帶一本書。
           </p>
-          <p class="quot_right">”</p>
+          <!-- <p class="quot_right">”</p> -->
         </div>
 
         <div class="img_area">
-          <img src="./images/woman_508x496.jpg" class="sentence_img" alt="">
+          <img src="./images/index_walking_girl.jpg" class="sentence_img" alt="">
           <p class="sentence">hey, take yourself away from the world.</p>
 
         </div>
@@ -126,21 +128,23 @@
         <div class="border">
           <div class="wrap">
             <div class="make step01">
-              <img src="./images/icon_like_142x145.png" class="icon01" alt="">
+              <img src="./images/index_icon_like_142x145.svg" class="icon01" alt="">
               <p class="text01">選擇喜歡的書或路線</p>
             </div>
+
             <div class="make step02">
-              <img src="./images/icon_loca_110x149.png" class="icon02" alt="">
+              <img src="./images/index_icon_loca_110x149.svg" class="icon02" alt="">
               <p class="text02">收集想去的周邊店家</p>
             </div>
+
             <div class="make step03">
-              <img src="./images/icon_book_157x132.png" class="icon03" alt="">
+              <img src="./images/index_icon_book_157x132.svg" class="icon03" alt="">
               <p class="text03">在我的旅冊中編輯</p>
             </div>
           </div>
 
           <div class="bt_make">
-            <a href="./browse.html" class="bt_make">開始製作</a>
+            <a href="./browse.html" class="bt_make">前往製作</a>
           </div>
         </div>
       </div>
@@ -202,6 +206,10 @@
           <a href="#" class="ig"><img src="./images/icon_ig_27x27.png" class="ig" alt=""></a>
           <a href="#" class="fb"><img src="./images/icon_fb_25x25.png" class="fb" alt=""></a>
         </div>
+      </div>
+
+      <div class="to_top">
+        <a href="#top">↑</a>
       </div>
     </footer>
   </body>

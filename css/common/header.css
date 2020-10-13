@@ -1,37 +1,40 @@
 header.header{
   position: relative;
-  /* background-color: transparent; */
-  background-color: hsla(0, 0%, 100%, .8);
+  background-color: transparent;
+  /* background-color: #fff;
+  box-shadow: 4px 3px 24px -16px hsla(60, 0%, 20%, .4); */
+  /* background-color: hsla(60, 0%, 20%, .1); */
   position: sticky;
   top: 0;
+  margin-top: -110px;
   width: 100%;
   min-width: 1200px;
   z-index: 999;
 }
 
-header.header div.header{
+div.header{
   /* border: 1px solid orange; */
-  width: 1200px;
+  /* width: 1200px; */
   max-width: 100%;
   min-width: 768px;
-  margin: 0 auto;
-
+  margin: 0 40px;
+  padding-top: 30px;
 }
 
-header.header div.header::before{
+div.header::after{
   content: "";
-  display: inline-block;
-  height: 100px;
+  display: block;
+  clear: both;
 }
 
-header.header div.header div.logo{
-  width: 200px;
+div.header div.logo{
+  /* border: 1px solid red; */
+  width: 160px;
   float: left;
-  position: relative;
-  top: 25px;
+  margin-bottom: 25px;
 }
 
-header.header div.header div.logo a.logo{
+div.header div.logo a.logo{
   background-image: url("../../images/logo_header_g_143x54.png");
   background-repeat: no-repeat;
   display: block;
@@ -40,40 +43,88 @@ header.header div.header div.logo a.logo{
   height: 54px;
 }
 
-header.header div.header nav.nav{
+div.header div.logo a.logo:hover{
+  background-image: url("../../images/logo_header_y_143x54.png");
+  background-repeat: no-repeat;
+  display: block;
+  text-indent: -900px;
+  width: 143px;
+  height: 54px;
+  transition: all 0.5s ease-out 0s;
+}
+
+div.header nav.nav{
   /* border: 1px solid red; */
   display: inline-block;
   float: right;
-  position: relative;
-  top: 40px;
+  padding-top: 15px;
 }
 
-header.header div.header nav.nav ul.nav{
+div.header nav.nav ul.nav{
   /* border: 1px solid blue; */
   list-style: none;
-  color: hsla(164, 50%, 31%, 1);;
   display: inline-block;
   font-size: 0;
-  border-bottom: 1px solid #fff;
 }
 
-header.header div.header nav.nav ul.nav > li{
+div.header nav.nav ul.nav > li{
   /* border: 1px solid skyblue; */
   display: inline-block;
-  font-size: 1.6rem;  /* 16px */
-  width: 80px;
+  width: 90px;
   height: 40px;
   text-align: center;
-  margin: 0 8px;
-  letter-spacing: 3px;
+  margin: 0 15px;
+  /* border-bottom: 1px solid hsla(60 , 20%, 75%, .5 ); */
+}
+
+div.header nav.nav ul.nav > li.my_book{
+  margin-left: 30px;
+  position: relative;
+}
+
+div.header nav.nav ul.nav > li.my_book > a{
+  width: 110px;
+  height: 45px;
+  padding: 7px;
+  border: 1px solid hsla(60, 20%, 75%, 1);
+  border-radius: 2px;
+}
+
+div.header nav.nav ul.nav > li.my_book:hover > a{
+  background-color: hsla(60, 100%, 40%, 1);
+  color: #fff;
+  transition: all 0.3s ease-out 0s;
+  border: 1px solid transparent;
+}
+
+/* div.header nav.nav ul.nav > li.my_book > a::after{
+  content: "";
+  display: inline-block;
+  width: 110px;
+  height: 45px;
+  border: 1px solid hsla(60, 20%, 75%, 1);
+  position: absolute;
+  left: -12%;
+  top: -23%;
+  border-radius: 2px;
+  z-index: -1;
+} */
+
+/* div.header nav.nav ul.nav > li.my_book:hover > a::after{
+  background-color: hsla(60, 100%, 40%, 1);
+  color: #fff;
+} */
+
+div.header nav.nav ul.nav > li > a{
+  color: hsla(60, 20%, 75%, 1);
+  display: block;
+  font-size: 1.7rem;  /* 17px */
+  letter-spacing: 0.4rem;
   font-weight: 300;
 }
 
-header.header div.header nav.nav ul.nav > li.my_book{
-  /* border: 1px solid yellow; */
-}
-
-header.header div.header nav.nav ul.nav > li > a{
-  color: hsla(164, 50%, 31%, 1);
-  display: block;
+div.header nav.nav ul.nav > li > a:hover{
+  color: hsla(60, 100%, 40%, 1);
+  font-weight: 300;
+  transition: all 0.3s ease-out 0s;
 }

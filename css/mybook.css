@@ -1,3 +1,205 @@
 @import "./common/all.css";
 @import "./common/header.css";
 @import "./common/footer.css";
+
+header.header{
+  position: relative;
+  background-color: transparent;
+  background-color: #fff;
+  box-shadow: 4px 3px 24px -16px hsla(60, 0%, 20%, .4);
+  position: sticky;
+  top: 0;
+  margin-top: -110px;
+  width: 100%;
+  min-width: 1200px;
+  z-index: 999;
+}
+
+main.main{
+  /* border: 1px solid blue; */
+  min-width: 1200px;
+  margin: 0 auto;
+}
+
+div#top div.title_wrap{
+  /* border: 1px solid cyan; */
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 13%;
+  text-align: center;
+}
+
+div#top div.title_wrap h2{
+  /* border: 1px solid gold; */
+  font-size: 3.2rem;
+  color: hsla(57, 9%, 61%, 1);
+}
+
+div#top div.title_wrap p{
+  font-size: 2rem;
+  color: hsla(57, 9%, 61%, 1);
+  margin-top: 8px;
+  letter-spacing: 0.4rem;
+}
+
+div#top div.back img{
+  /* border: 1px solid GoldenRod; */
+  position: absolute;
+  top: 28%;
+  left: 10%;
+  opacity: 70%;
+}
+
+div#sop{
+  /* border: 1px solid red; */
+  width: 70%;
+  margin: 50px auto;
+}
+
+div.sop01{
+  margin-top: 100px !important;
+}
+
+
+div#sop div.h_wrap div.sop_num{
+  /* border: 1px solid Chartreuse; */
+  display: inline-block;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background-color: hsla(57, 9%, 61%, 1);
+  margin: 12px;
+  margin-right: 25px;
+}
+
+div#sop div.h_wrap div.sop_num p{
+  /* border: 1px solid chocolate; */
+  font-size: 2.4rem;
+  font-family: "Yu Gothic UI";
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+  padding: 12px 0;
+}
+
+div#sop div.h_wrap div.heading{
+  display: inline-block;
+  min-width: 35%;
+}
+
+div#sop div.h_wrap div.heading h2{
+  /* border: 1px solid IndianRed; */
+  font-size: 2.6rem;
+  color: hsla(57, 9%, 61%, 1);
+  display: inline-block;
+}
+
+div#sop div.h_wrap div.heading p{
+  /* border: 1px solid greenyellow; */
+  font-size: 1.9rem;
+  color: hsla(60, 20%, 75%, 1);
+  letter-spacing: 0.4rem;
+  float: right;
+  padding: 8px;
+  margin-left: 10px;
+  width: 250px;
+}
+
+div#sop div.content div.line{
+  /* border: 1px solid purple; */
+  border-right: 1px solid hsla(57, 9%, 61%, 1);
+  width: 40px;
+  height: 700px;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+div#sop div.content div.shorter{
+  height: 370px;
+}
+
+div#sop div.content div.card_wrap{
+  /* border: 1px solid aquamarine; */
+  width: 80%;
+  display: inline-block;
+}
+
+div#sop div.content div.card_wrap div.card{
+  background-color: #fff;
+  box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, .1);
+  margin: 40px 0;
+  width: 900px;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 0;
+  position: relative;
+}
+
+div#sop div.content div.card_wrap div.card div.img{
+  /* border: 1px solid cyan; */
+  display: inline-block;
+}
+
+div#sop div.content div.card_wrap div.card div.info{
+  /* border: 1px solid green; */
+  width: 50%;
+  display: inline-block;
+  /* float: right; */
+  /* margin: 30px 70px 0 0; */
+  position: absolute;
+  top: 12%;
+  left: 38%;
+}
+
+div#sop div.content div.card_wrap div.card div.info span.edit{
+  border: 1px solid hsla(57, 9%, 61%, 1);
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 8px 0;
+  margin: 10px;
+  border-radius: 3px;
+  background-color: #fff;
+  color: hsla(57, 9%, 61%, 1);
+  letter-spacing: 0.2rem;
+}
+
+div#sop div.content div.card_wrap div.card div.info h2{
+  margin-bottom: 25px;
+  font-size: 2.3rem;
+  letter-spacing: 0.3rem;
+  color: hsla(155, 100%, 32%, 1);
+  display: block;
+}
+
+div#sop div.content div.card_wrap div.card div.info p{
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+  line-height: 2;
+  color: hsla(57, 9%, 61%, 1);
+  margin-left: 1%;
+}
+
+div#btn{
+  /* border: 1px solid red; */
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+div#btn button.submit{
+  width: 116px;
+  height: 116px;
+  border: 1px solid transparent;
+  background-color: hsla(60, 20%, 75%, 1);
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: -1px 4px 74px -16px rgba(0, 0, 0, .3);
+
+  color: #fff;
+  text-align: center;
+  font-size: 1.7rem;  /* 17px */
+  letter-spacing: 0.4rem;
+}

@@ -1,13 +1,13 @@
 footer.footer{
   position: relative;
   /* background-color: transparent; */
-  background-color: hsla(164, 50%, 31%, 1);
+  background-color: hsla(60, 20%, 75%, 1);
   width: 100%;
   min-width: 1200px;
   height: 111px;
 }
 
-footer.footer div.footer{
+div.footer{
   /* border: 1px solid purple; */
   width: 1015px;
   max-width: 100%;
@@ -19,20 +19,20 @@ footer.footer div.footer{
 }
 
 /*
-footer.footer div.footer::before{
+div.footer::before{
   content: "";
   display: inline-block;
   height: 111px;
 } */
 
-footer.footer div.footer div.logo{
+div.footer div.logo{
   width: 200px;
   float: left;
   /* position: relative;
   top: 45px; */
 }
 
-footer.footer div.footer div.logo a.logo{
+div.footer div.logo a.logo{
   background-image: url("../../images/logo_footer_110x42.png");
   background-repeat: no-repeat;
   display: block;
@@ -41,7 +41,7 @@ footer.footer div.footer div.logo a.logo{
   height: 42px;
 }
 
-footer.footer div.footer nav.bottom{
+div.footer nav.bottom{
   /* border: 1px solid orange; */
   display: inline-block;
   /* float: right; */
@@ -50,7 +50,7 @@ footer.footer div.footer nav.bottom{
   padding-top: 10px;
 }
 
-footer.footer div.footer nav.bottom ul.bottom{
+div.footer nav.bottom ul.bottom{
   /* border: 1px solid black; */
   list-style: none;
   color: #fff;
@@ -58,7 +58,7 @@ footer.footer div.footer nav.bottom ul.bottom{
   font-size: 0;
 }
 
-footer.footer div.footer nav.bottom ul.bottom > li{
+div.footer nav.bottom ul.bottom > li{
   /* border: 1px solid skyblue; */
   display: inline-block;
   font-size: 1.4rem;  /* 16px */
@@ -71,21 +71,41 @@ footer.footer div.footer nav.bottom ul.bottom > li{
 
 }
 
-footer.footer div.footer nav.bottom ul.bottom > li > a{
+div.footer nav.bottom ul.bottom > li > a{
   color: #fff;
   display: block;
   border-bottom: 1px solid #fff;
 }
 
-footer.footer div.footer div.icon{
+div.footer div.icon{
   /* border: 1px solid white; */
   display: inline-block;
   float: right;
   padding-top: 8px;
 }
 
-footer.footer div.footer div.icon img{
+div.footer div.icon img{
   /* border: 1px solid red; */
   vertical-align: middle;
   margin: 0 10px;
+}
+
+div.to_top > a{
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: hsla(57, 9%, 61%, 1);
+  float: right;
+  position: absolute;
+  top: -26%;
+  right: 7%;
+  box-shadow: 0px 1px 14px -8px hsl(0deg 0% 100% / 35%);
+  color: #fff;
+  font-size: 2rem;
+  padding: 11px 0 0 17px;
+}
+
+div.to_top > a:hover{
+  background-color: hsla(60, 100%, 40%, 1);
+  transition: all 0.2s ease-out 0s;
 }
